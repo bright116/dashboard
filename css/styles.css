@@ -242,6 +242,23 @@ label {
 .btn-xs{
     width: 50px;
 }
+#example {
+    margin-top: 0px;
+}
+#filterbox{
+    border-radius:5px;
+    border-left:none;
+    background: #edf1f5;
+    outline-style: none;
+    font-weight: normal;
+}
+.form-control:focus {
+    border-color: #d9dbde;
+    border-left:none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px #d9dbde, 0 0 8px #d9dbde;
+    box-shadow: inset 0 1px 1px #d9dbde, 0 0 8px #d9dbde;
+}
 
 
 
