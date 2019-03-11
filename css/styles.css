@@ -18,6 +18,9 @@ label {
 }
 
 
+
+
+
 .company-name{
  height: 30px;
     width: auto;
@@ -290,11 +293,13 @@ label {
 .select2-container-multi .select2-choices{
     border-radius:5px!important;
 }
-/*.select2-default {*/
-    /*color: red !important;*/
-/*}*/
+
 .select2-results .select2-highlighted {
     background: #ed7d31;
+}
+/* datatable custom search hide*/
+#example_filter{
+    display:none;
 }
 
 
