@@ -17,6 +17,8 @@
     <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
     <!-- animation CSS -->
     <link href="css/animate.css" rel="stylesheet">
+    <!--switchery -->
+    <link href="plugins/bower_components/switchery/dist/switchery.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -252,8 +254,17 @@
                                 <tr>
                                     <th>#</th>
                                     <th>
-                                        <input type="text" id="filterbox" class="form-control" placeholder="Search by advertiser or app" aria-describedby="basic-addon1">
+                                        <div class="search-datatable">
+                                            <input type="text" id="filterbox" class="form-control" placeholder="Search by advertiser or app" aria-describedby="basic-addon1">
+                                            <i class="fa fa-search"></i>
+                                        </div>
 
+                                        <!--<form role="search" class="app-search hidden-sm hidden-xs m-r-10">-->
+                                            <!--<input type="text" placeholder="Search..." class="form-control">-->
+                                            <!--<a href="" class="active">-->
+                                                <!--<i class="fa fa-search"></i>-->
+                                            <!--</a>-->
+                                        <!--</form>-->
                                     </th>
                                     <th>Impressions</th>
                                     <th>Clicks</th>
@@ -297,13 +308,14 @@
                                     <td><i class="ti-arrow-up text-success"></i>
                                         <span class="counter text-success">0.46%</span>
                                     </td>
-                                    <td><span class="button-checkbox">
-                                            <button type="button" class="btn btn-danger active" data-color="danger">
-                                                <i class="state-icon glyphicon glyphicon-check"></i>&nbsp;Block</button>
-                                             <input type="checkbox" class="hidden" checked="">
-                                          </span>
+                                    <td>
+                                        <button class="btn btn-danger">Block</button>
                                     </td>
-                                    <td>$5.27</td>
+                                    <td>
+                                        <div class="switchery-demo">
+                                            <input type="checkbox" checked class="js-switch" data-color="#ffca4a" />
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -318,15 +330,12 @@
                                     <td>$420.00</td>
                                     <td>$4.20</td>
                                     <td><i class="ti-arrow-up text-success"></i> <span class="counter text-success">0.33%</span></td>
-                                    <td><span class="button-checkbox">
-                                            <button type="button" class="btn btn-success active active" data-color="success">
-                                                <i class="state-icon glyphicon glyphicon-unchecked"></i>&nbsp;Unblock</button>
-                                             <input type="checkbox" class="hidden" checked="">
-                                          </span>
+                                    <td>
+                                        <button class="btn btn-danger ">Block</button>
                                     </td>
                                     <td>
-                                        <div class="switchery-demo m-b-30">
-                                           <input type="checkbox" checked="" class="js-switch" data-color="#ffca4a" data-switchery="true"><span class="switchery switchery-default" style="background-color: rgb(255, 202, 74); border-color: rgb(255, 202, 74); box-shadow: rgb(255, 202, 74) 0px 0px 0px 16px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;"><small style="left: 20px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span>
+                                        <div class="switchery-demo">
+                                            <input type="checkbox" checked class="js-switch" data-color="#ffca4a" />
                                         </div>
                                     </td>
                                 </tr>
@@ -343,15 +352,12 @@
                                     <td>$420.00</td>
                                     <td>$4.20</td>
                                     <td><i class="ti-arrow-up text-success"></i> <span class="counter text-success">0.33%</span></td>
-                                    <td><span class="button-checkbox">
-                                            <button type="button" class="btn btn-success active active" data-color="success">
-                                                <i class="state-icon glyphicon glyphicon-unchecked"></i>&nbsp;Unblock</button>
-                                             <input type="checkbox" class="hidden" checked="">
-                                          </span>
+                                    <td>
+                                        <button class="btn btn-success">Unblock</button>
                                     </td>
                                     <td>
-                                        <div class="switchery-demo m-b-30">
-                                            <input type="checkbox" checked="" class="js-switch" data-color="#ffca4a" data-switchery="true"><span class="switchery switchery-default" style="background-color: rgb(255, 202, 74); border-color: rgb(255, 202, 74); box-shadow: rgb(255, 202, 74) 0px 0px 0px 16px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;"><small style="left: 20px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span>
+                                        <div class="switchery-demo">
+                                            <input type="checkbox" checked class="js-switch" data-color="#ffca4a" />
                                         </div>
                                     </td>
                                 </tr>
@@ -368,15 +374,12 @@
                                     <td>$420.00</td>
                                     <td>$4.20</td>
                                     <td><i class="ti-arrow-up text-success"></i> <span class="counter text-success">0.33%</span></td>
-                                    <td><span class="button-checkbox">
-                                            <button type="button" class="btn btn-success active active" data-color="success">
-                                                <i class="state-icon glyphicon glyphicon-unchecked"></i>&nbsp;Unblock</button>
-                                             <input type="checkbox" class="hidden" checked="">
-                                          </span>
+                                    <td>
+                                        <button class="btn btn-danger">Block</button>
                                     </td>
                                     <td>
-                                        <div class="switchery-demo m-b-30">
-                                            <input type="checkbox" checked="" class="js-switch" data-color="#ffca4a" data-switchery="true"><span class="switchery switchery-default" style="background-color: rgb(255, 202, 74); border-color: rgb(255, 202, 74); box-shadow: rgb(255, 202, 74) 0px 0px 0px 16px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;"><small style="left: 20px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span>
+                                        <div class="switchery-demo">
+                                            <input type="checkbox" checked class="js-switch" data-color="#ffca4a" />
                                         </div>
                                     </td>
                                 </tr>
@@ -393,15 +396,12 @@
                                     <td>$420.00</td>
                                     <td>$4.20</td>
                                     <td><i class="ti-arrow-up text-success"></i> <span class="counter text-success">0.33%</span></td>
-                                    <td><span class="button-checkbox">
-                                            <button type="button" class="btn btn-success active active" data-color="success">
-                                                <i class="state-icon glyphicon glyphicon-unchecked"></i>&nbsp;Unblock</button>
-                                             <input type="checkbox" class="hidden" checked="">
-                                          </span>
+                                    <td>
+                                        <button class="btn btn-success">Unblock</button>
                                     </td>
                                     <td>
-                                        <div class="switchery-demo m-b-30">
-                                            <input type="checkbox" checked="" class="js-switch" data-color="#ffca4a" data-switchery="true"><span class="switchery switchery-default" style="background-color: rgb(255, 202, 74); border-color: rgb(255, 202, 74); box-shadow: rgb(255, 202, 74) 0px 0px 0px 16px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;"><small style="left: 20px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span>
+                                        <div class="switchery-demo">
+                                            <input type="checkbox" checked class="js-switch" data-color="#ffca4a" />
                                         </div>
                                     </td>
                                 </tr>
@@ -418,15 +418,12 @@
                                     <td>$420.00</td>
                                     <td>$4.20</td>
                                     <td><i class="ti-arrow-down text-danger"></i> <span class="counter text-danger">0.55%</span></td>
-                                    <td><span class="button-checkbox">
-                                            <button type="button" class="btn btn-success active active" data-color="success">
-                                                <i class="state-icon glyphicon glyphicon-unchecked"></i>&nbsp;Unblock</button>
-                                             <input type="checkbox" class="hidden" checked="">
-                                          </span>
+                                    <td>
+                                        <button class="btn btn-danger">Block</button>
                                     </td>
                                     <td>
-                                        <div class="switchery-demo m-b-30">
-                                            <input type="checkbox" checked="" class="js-switch" data-color="#ffca4a" data-switchery="true"><span class="switchery switchery-default" style="background-color: rgb(255, 202, 74); border-color: rgb(255, 202, 74); box-shadow: rgb(255, 202, 74) 0px 0px 0px 16px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;"><small style="left: 20px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span>
+                                        <div class="switchery-demo">
+                                            <input type="checkbox" checked class="js-switch" data-color="#ffca4a" />
                                         </div>
                                     </td>
                                 </tr>
@@ -514,6 +511,8 @@
 <script src="js/jquery.slimscroll.js"></script>
 <!--Wave Effects -->
 <script src="js/waves.js"></script>
+<!-- Switchery -->
+<script src="plugins/bower_components/switchery/dist/switchery.min.js"></script>
 <!-- Custom Theme JavaScript -->
 <script src="js/custom.min.js"></script>
 <script src="plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
@@ -528,13 +527,26 @@
 <!-- end - This is for export functionality only -->
 <script>
       $(document).ready(function() {
+          //switchery
+          var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+          $('.js-switch').each(function() {
+              new Switchery($(this)[0], $(this).data());
+          });
+
+          //datatable
              var dataTable = $('#example').DataTable({
                  "dom": '<"top"i>rt<"bottom"flp><"clear">',
                 "pageLength": 50,
                 "lengthChange": false,
                 "displayLength": 50,
                  "dom": 't',
-                 "ordering": false
+                 "ordering": false,
+
+                 "columnDefs": [
+                     { "targets": 1, "className": "text-left", "width": "30%" },
+                     { "targets": "_all", "className": "text-center"},
+
+                 ]
              });
 
           $("#filterbox").keyup(function() {

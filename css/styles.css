@@ -2,6 +2,22 @@
 label {
     font-weight: 300;
 }
+.btn-danger{
+   background: #a0110e;
+   border: 1px solid #a0110e;
+}
+.btn-success{
+    background: #5d903a;
+    border: 1px solid #5d903a;
+}
+.btn-danger:hover{
+    background: #b51c1b;
+}
+.btn-success:hover{
+    background: #659a41;
+}
+
+
 .company-name{
  height: 30px;
     width: auto;
@@ -259,9 +275,27 @@ label {
     -webkit-box-shadow: inset 0 1px 1px #d9dbde, 0 0 8px #d9dbde;
     box-shadow: inset 0 1px 1px #d9dbde, 0 0 8px #d9dbde;
 }
-
-
-
+#example button{
+    width:80%;
+}
+.search-datatable{
+    position:relative;
+}
+.search-datatable i{
+    position:absolute;
+    color: #b7b7b7;
+    right:10px;
+    top:12px;
+}
+.select2-container-multi .select2-choices{
+    border-radius:5px!important;
+}
+/*.select2-default {*/
+    /*color: red !important;*/
+/*}*/
+.select2-results .select2-highlighted {
+    background: #ed7d31;
+}
 
 
 
