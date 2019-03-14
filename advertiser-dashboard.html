@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
+    <title>Ample Admin Template - The Ultimate Multipurpose admin template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet"
+          type="text/css"/>
+    <!-- Menu CSS -->
+    <link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!--switchery -->
+    <link href="plugins/bower_components/switchery/dist/switchery.min.css" rel="stylesheet"/>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="fix-header">
+<!-- ============================================================== -->
+<!-- Preloader -->
+<!-- ============================================================== -->
+<div class="preloader">
+    <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+</div>
+<!-- ============================================================== -->
+<!-- Wrapper -->
+<!-- ============================================================== -->
+<div id="wrapper">
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <nav class="navbar navbar-default navbar-static-top m-b-0">
+        <div class="navbar-header">
+            <div class="top-left-part">
+                <!-- Logo -->
+                <a class="logo" href="index.html">
+                    <b>
+                        <img src="images/logo-white.png" width="38" alt="home" class="dark-logo"/>
+                    </b>
+                    <span class="hidden-xs">
+                        <img src="images/company-name.png" alt="home" class="dark-logo"/>
+                     </span> </a>
+            </div>
+            <!-- /Logo -->
+            <!-- Search input and Toggle icon -->
+            <ul class="nav navbar-top-links navbar-left">
+                <li><a href="javascript:void(0)" class="open-close waves-effect waves-light visible-xs"><i
+                        class="ti-close ti-menu"></i></a></li>
+                <!-- /.Megamenu -->
+            </ul>
+            <ul class="nav navbar-top-links navbar-right pull-right">
+                <li>
+                    <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
+                        <input type="text" placeholder="Search..." class="form-control"> <a href=""><i
+                            class="fa fa-search"></i></a></form>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"> <img
+                            src="plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b
+                            class="hidden-xs">Steave</b><span class="caret"></span> </a>
+                    <ul class="dropdown-menu dropdown-user animated flipInY">
+                        <li>
+                            <div class="dw-user-box">
+                                <div class="u-img"><img src="plugins/images/users/varun.jpg" alt="user"/></div>
+                                <div class="u-text">
+                                    <h4>Steave Jobs</h4>
+                                    <p class="text-muted">varun@gmail.com</p><a href="profile.html"
+                                                                                class="btn btn-rounded btn-danger btn-sm">View
+                                    Profile</a></div>
+                            </div>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                        <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+                        <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+        </div>
+        <!-- /.navbar-header -->
+        <!-- /.navbar-top-links -->
+        <!-- /.navbar-static-side -->
+    </nav>
+    <!-- End Top Navigation -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav slimscrollsidebar">
+            <div class="sidebar-head">
+                <h3><span class="fa-fw open-close"><i class="ti-menu hidden-xs"></i><i class="ti-close visible-xs"></i></span>
+                    <span class="hide-menu">Navigation</span></h3>
+            </div>
+            <ul class="nav" id="side-menu">
+                <li><a href="index.html" class="waves-effect"><i class="mdi mdi-airballoon"></i><span
+                        class="hide-menu p-l-10">Offer Stats</span> </a>
+                </li>
+                <li><a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-apps"></i><span
+                        class="hide-menu p-l-10"> Placement Editor <span class="fa arrow"></span> </span></a>
+
+                </li>
+                <li><a href="#" class="waves-effect"><i class="mdi mdi-cash-usd"></i><span class="hide-menu p-l-10">My Payments</span></a>
+                </li>
+                <li><a href="#" class="waves-effect"><i class="mdi mdi-calculator"></i><span class="hide-menu p-l-10">Custom Reports</span></a>
+
+                </li>
+                <li><a href="inbox.html" class="waves-effect"><i class="mdi mdi-eye-outline"></i><span
+                        class="hide-menu p-l-10">User Insight</span></a>
+                </li>
+
+                <li class="devider"></li>
+                <li><a href="widgets.html" class="waves-effect"><i class="mdi mdi-shopping"></i> <span
+                        class="hide-menu p-l-10">Trading Desk</span></a></li>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page Content -->
+    <!-- ============================================================== -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row bg-title a-color">
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                    <label class="control-label text-white">
+                        Platform
+                    </label>
+                    <div class="">
+                        <a href="#ios" aria-controls="ios" role="tab" data-toggle="tab" aria-expanded="true">
+                            <label class="white-box m-r-10 platform-label">
+                                <input type="radio" name="platform" value="ios" checked>
+                                <i class="fa fa-apple fa-2x vertical-middle"></i>
+                                <span class="font-medium">iOS</span>
+                            </label>
+                        </a>
+                        <a href="#android" aria-controls="android" role="tab" data-toggle="tab"
+                           aria-expanded="true">
+                            <label class="white-box app-search platform-label">
+                                <input type="radio" name="platform" value="android">
+                                <i class="fa fa-android fa-2x vertical-middle"></i>
+                                <span class="font-bold">Android</span>
+                            </label>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+                    <label class="control-label text-white">Country</label>
+                    <a href="#country" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false">
+                        <select class="form-control select2">
+                            <option>All</option>
+                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                <option value="AK">Alaska</option>
+                                <option value="HI">Hawaii</option>
+                            </optgroup>
+                            <optgroup label="Pacific Time Zone">
+                                <option value="CA">California</option>
+                                <option value="NV">Nevada</option>
+                                <option value="OR">Oregon</option>
+                                <option value="WA">Washington</option>
+                            </optgroup>
+                            <optgroup label="Mountain Time Zone">
+                                <option value="NE">Nebraska</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="UT">Utah</option>
+                                <option value="WY">Wyoming</option>
+                            </optgroup>
+                        </select>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+                    <div class="form-group text-left">
+                        <label class="control-label text-white">Category</label>
+                        <a href="#category" aria-controls="messages" role="tab" data-toggle="tab"
+                           aria-expanded="false">
+                            <select class="form-control text-white" name="country">
+                                <option>All</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+                    <div class="form-group text-left">
+                        <label class="control-label text-white">Advertiser</label>
+                        <a href="#advertiser" aria-controls="profile" role="tab" data-toggle="tab"
+                           aria-expanded="false">
+                            <select class="form-control text-white" name="country">
+                                <option>All</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+                    <div class="form-group text-left">
+                        <label class="control-label text-white">Period</label>
+                        <a href="#period" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false">
+                            <input type="text" class="mydatepicker form-control input-daterange-timepicker"
+                                   name="daterange" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-title a-color">
+                <div class="col-lg-offset-2 col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                    <label class="control-label text-white">Country</label>
+                    <a href="#country" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false">
+                        <select class="form-control select2">
+                            <option>All</option>
+                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                <option value="AK">Alaska</option>
+                                <option value="HI">Hawaii</option>
+                            </optgroup>
+                            <optgroup label="Pacific Time Zone">
+                                <option value="CA">California</option>
+                                <option value="NV">Nevada</option>
+                                <option value="OR">Oregon</option>
+                                <option value="WA">Washington</option>
+                            </optgroup>
+                            <optgroup label="Mountain Time Zone">
+                                <option value="NE">Nebraska</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="UT">Utah</option>
+                                <option value="WY">Wyoming</option>
+                            </optgroup>
+                        </select>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+                    <div class="form-group text-left">
+                        <label class="control-label text-white">Category</label>
+                        <a href="#category" aria-controls="messages" role="tab" data-toggle="tab"
+                           aria-expanded="false">
+                            <select class="form-control text-white" name="country">
+                                <option>All</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+                    <div class="form-group text-left">
+                        <label class="control-label text-white">Advertiser</label>
+                        <a href="#advertiser" aria-controls="profile" role="tab" data-toggle="tab"
+                           aria-expanded="false">
+                            <select class="form-control text-white" name="country">
+                                <option>All</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+                    <div class="form-group text-left">
+                        <label class="control-label text-white">Period</label>
+                        <a href="#period" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false">
+                            <input type="text" class="mydatepicker form-control input-daterange-timepicker"
+                                   name="daterange" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+                    <div class="form-group text-left">
+                        <button type="button" class="btn btn-default nav-button1">Clear All</button>
+                        <button type="button" class="btn btn-default nav-button2">Export</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /row -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="table-responsive">
+                        <table id="adv-dashboard" class="table display">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>
+                                    <div class="search-datatable">
+                                        <input type="text" id="filterbox" class="form-control"
+                                               placeholder="Search by publisher" aria-describedby="basic-addon1">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </th>
+                                <th>Publisher Apps</th>
+                                <th>Avg. CTR</th>
+                                <th>Top Apps</th>
+                                <th>Ang. CTR</th>
+                            </tr>
+                            </thead>
+                            <tfoot>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Publisher Apps</th>
+                                <th>Avg. CTR</th>
+                                <th>Top Apps</th>
+                                <th>Ang. CTR</th>
+                            </tr>
+                            </tfoot>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Outfit7 Limited</td>
+                                <td class="adv-apps box">
+                                        <img src="images/app1.png" alt="inn_logo"/>
+                                        <img src="images/app2.png" alt="inn_logo"/>
+                                        <img src="images/app3.png" alt="inn_logo"/>
+                                    <div class="text-right">150</div>
+                                </td>
+                                <td>
+                                    <div class="prg-bar">
+                                        <i class="ti-arrow-up text-success"></i>
+                                        <span class="counter text-success">0.46%</span>
+                                        <span class="p-l-10 p-r-10">2.35%</span>
+                                    </div>
+                                    <div class="progress">
+                                            <div class="progress-bar progress-bar-info" style="width: 20%;" role="progressbar"> <span class="sr-only">20% Complete</span> </div>
+                                    </div>
+                                </td>
+                                <td class="adv-apps box">
+                                    <img src="images/app1.png" alt="inn_logo"/>
+                                    <img src="images/app2.png" alt="inn_logo"/>
+                                    <img src="images/app3.png" alt="inn_logo"/>
+                                    <span class="text-right">150</span>
+                                </td>
+                                <td>
+                                    <div class="prg-bar">
+                                        <i class="ti-arrow-up text-success"></i>
+                                        <span class="counter text-success">0.46%</span>
+                                        <span class="p-l-10 p-r-10">2.35%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-info" style="width: 20%;" role="progressbar"> <span class="sr-only">20% Complete</span> </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>BabyBus kids Game</td>
+                                <td class="adv-apps box">
+                                    <img src="images/app1.png" alt="inn_logo"/>
+                                    <img src="images/app2.png" alt="inn_logo"/>
+                                    <img src="images/app3.png" alt="inn_logo"/>
+                                    <span class="text-right">150</span>
+                                </td>
+                                <td>
+                                    <div class="prg-bar">
+                                        <i class="ti-arrow-down text-danger"></i>
+                                        <span class="counter text-danger">0.46%</span>
+                                        <span class="p-l-10 p-r-10">2.35%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-info " style="width: 50%;" role="progressbar"> <span class="sr-only">20% Complete</span> </div>
+                                    </div>
+                                </td>
+                                <td class="adv-apps box">
+                                    <img src="images/app1.png" alt="inn_logo"/>
+                                    <img src="images/app2.png" alt="inn_logo"/>
+                                    <img src="images/app3.png" alt="inn_logo"/>
+                                    <span class="text-right">150</span>
+                                </td>
+                                <td>
+                                    <div class="prg-bar">
+                                        <i class="ti-arrow-up text-success"></i>
+                                        <span class="counter text-success">0.46%</span>
+                                        <span class="p-l-10 p-r-10">2.35%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-info" style="width: 20%;" role="progressbar"> <span class="sr-only">20% Complete</span> </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Video show Enjoy Game</td>
+                                <td class="adv-apps box">
+                                    <img src="images/app1.png" alt="inn_logo"/>
+                                    <img src="images/app2.png" alt="inn_logo"/>
+                                    <img src="images/app3.png" alt="inn_logo"/>
+                                    <span class="text-right">150</span>
+                                </td>
+                                <td>
+                                    <div class="prg-bar">
+                                        <i class="ti-arrow-up text-success"></i>
+                                        <span class="counter text-success">0.46%</span>
+                                        <span class="p-l-10 p-r-10">2.35%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-info" style="width: 20%;" role="progressbar"> <span class="sr-only">20% Complete</span> </div>
+                                    </div>
+                                </td>
+                                <td class="adv-apps box">
+                                    <img src="images/app1.png" alt="inn_logo"/>
+                                    <img src="images/app2.png" alt="inn_logo"/>
+                                    <img src="images/app3.png" alt="inn_logo"/>
+                                    <span class="text-right">150</span>
+                                </td>
+                                <td>
+                                    <div class="prg-bar">
+                                        <i class="ti-arrow-up text-success"></i>
+                                        <span class="counter text-success">0.46%</span>
+                                        <span class="p-l-10 p-r-10">2.35%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-info" style="width: 20%;" role="progressbar"> <span class="sr-only">20% Complete</span> </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <!-- ============================================================== -->
+            <!-- Right sidebar -->
+            <!-- ============================================================== -->
+            <!-- .right-sidebar -->
+            <div class="right-sidebar">
+                <div class="slimscrollright">
+                    <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span>
+                    </div>
+                    <div class="r-panel-body">
+                        <ul id="themecolors" class="m-t-20">
+                            <li><b>With Light sidebar</b></li>
+                            <li><a href="javascript:void(0)" data-theme="default" class="default-theme">1</a></li>
+                            <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
+                            <li><a href="javascript:void(0)" data-theme="gray" class="yellow-theme">3</a></li>
+                            <li><a href="javascript:void(0)" data-theme="blue" class="blue-theme">4</a></li>
+                            <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
+                            <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
+                            <li><b>With Dark sidebar</b></li>
+                            <br/>
+                            <li><a href="javascript:void(0)" data-theme="default-dark" class="default-dark-theme">7</a>
+                            </li>
+                            <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a></li>
+                            <li><a href="javascript:void(0)" data-theme="gray-dark" class="yellow-dark-theme">9</a></li>
+                            <li><a href="javascript:void(0)" data-theme="blue-dark"
+                                   class="blue-dark-theme working">10</a></li>
+                            <li><a href="javascript:void(0)" data-theme="purple-dark" class="purple-dark-theme">11</a>
+                            </li>
+                            <li><a href="javascript:void(0)" data-theme="megna-dark" class="megna-dark-theme">12</a>
+                            </li>
+                        </ul>
+                        <ul class="m-t-20 all-demos">
+                            <li><b>Choose other demos</b></li>
+                        </ul>
+                        <ul class="m-t-20 chatonline">
+                            <li><b>Chat option</b></li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img"
+                                                                  class="img-circle"> <span>Varun Dhavan <small
+                                        class="text-success">online</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="plugins/images/users/genu.jpg" alt="user-img"
+                                                                  class="img-circle"> <span>Genelia Deshmukh <small
+                                        class="text-warning">Away</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="plugins/images/users/ritesh.jpg" alt="user-img"
+                                                                  class="img-circle"> <span>Ritesh Deshmukh <small
+                                        class="text-danger">Busy</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="plugins/images/users/arijit.jpg" alt="user-img"
+                                                                  class="img-circle"> <span>Arijit Sinh <small
+                                        class="text-muted">Offline</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="plugins/images/users/govinda.jpg" alt="user-img"
+                                                                  class="img-circle"> <span>Govinda Star <small
+                                        class="text-success">online</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="plugins/images/users/hritik.jpg" alt="user-img"
+                                                                  class="img-circle"> <span>John Abraham<small
+                                        class="text-success">online</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="plugins/images/users/john.jpg" alt="user-img"
+                                                                  class="img-circle"> <span>Hritik Roshan<small
+                                        class="text-success">online</small></span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><img src="plugins/images/users/pawandeep.jpg"
+                                                                  alt="user-img" class="img-circle"> <span>Pwandeep rajan <small
+                                        class="text-success">online</small></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right sidebar -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- /.container-fluid -->
+        <footer class="footer text-center"> 2017 &copy; Ample Admin brought to you by themedesigner.in</footer>
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+<!-- jQuery -->
+<script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Menu Plugin JavaScript -->
+<script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+<!--slimscroll JavaScript -->
+<script src="js/jquery.slimscroll.js"></script>
+<!--Wave Effects -->
+<script src="js/waves.js"></script>
+<!-- Switchery -->
+<script src="plugins/bower_components/switchery/dist/switchery.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.min.js"></script>
+<script src="plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
+<!-- start - This is for export functionality only -->
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+<!-- end - This is for export functionality only -->
+<script>
+    $(document).ready(function () {
+        //switchery
+        var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+        $('.js-switch').each(function () {
+            new Switchery($(this)[0], $(this).data());
+        });
+
+        //datatable
+        var dataTable = $('#adv-dashboard').DataTable({
+            "dom": '<"top"i>rt<"bottom"flp><"clear">',
+            "lengthChange": false,
+            "responsive": false,
+            "displayLength": 10,
+            "bInfo": false,
+            "ordering": false,
+            "columnDefs": [
+                { "width": "30%", "targets": 1 },
+                { "width": "23%", "targets": 3 },
+                { "width": "23%", "targets": 5 },
+                { "width": "13%", "targets": 2 },
+                { "width": "13%", "targets": 4 },
+            ]
+        });
+
+        $("#filterbox").keyup(function () {
+            dataTable.search(this.value).draw();
+        });
+
+        // Order by the grouping
+        $('#example tbody').on('click', 'tr.group', function () {
+            var currentOrder = table.order()[0];
+            if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                table.order([2, 'desc']).draw();
+            } else {
+                table.order([2, 'asc']).draw();
+            }
+        });
+    });
+
+
+</script>
+<!--Style Switcher -->
+<script src="plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+
+</body>
+
+</html>
