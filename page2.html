@@ -335,6 +335,11 @@
                             <div class="item"><img src="images/creative2.png" alt="Owl Image"></div>
                             <div class="item"><img src="images/creative2.png" alt="Owl Image"></div>
                             <div class="item"><img src="images/creative1.png" alt="Owl Image"></div>
+                            <div class="item"><img src="images/creative1.png" alt="Owl Image"></div>
+                            <div class="item"><img src="images/creative2.png" alt="Owl Image"></div>
+                            <div class="item"><img src="images/creative2.png" alt="Owl Image"></div>
+                            <div class="item"><img src="images/creative2.png" alt="Owl Image"></div>
+                            <div class="item"><img src="images/creative1.png" alt="Owl Image"></div>
                         </div>
                     </div>
                 </div>
@@ -522,20 +527,40 @@
             <!-- Rate this offer -->
             <div class="row white-box">
                 <h3 class="box-title best-offer">Rate this offer</h3>
-                <div class="col-lg-4">
-                    <div class="star-rating">
+                <div class="col-lg-5">
+
+                    <div class="star-rating1 text-right m-t-10">
+                        <span>Payment </span>
                         <i class="fa fa-star-o" data-rating="1"></i>
                         <i class="fa fa-star-o" data-rating="2"></i>
                         <i class="fa fa-star-o" data-rating="3"></i>
                         <i class="fa fa-star-o" data-rating="4"></i>
                         <i class="fa fa-star-o" data-rating="5"></i>
-                        <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                        <input type="hidden" name="whatever1" class="rating-value" value="0">
+                    </div>
+                    <div class="star-rating2 text-right m-t-10">
+                        <span>Recommendation </span>
+                        <i class="fa fa-star-o" data-rating="1"></i>
+                        <i class="fa fa-star-o" data-rating="2"></i>
+                        <i class="fa fa-star-o" data-rating="3"></i>
+                        <i class="fa fa-star-o" data-rating="4"></i>
+                        <i class="fa fa-star-o" data-rating="5"></i>
+                        <input type="hidden" name="whatever1" class="rating-value" value="0">
+                    </div>
+                    <div class="star-rating3 text-right m-t-10">
+                        <span>Willing to work again </span>
+                        <i class="fa fa-star-o" data-rating="1"></i>
+                        <i class="fa fa-star-o" data-rating="2"></i>
+                        <i class="fa fa-star-o" data-rating="3"></i>
+                        <i class="fa fa-star-o" data-rating="4"></i>
+                        <i class="fa fa-star-o" data-rating="5"></i>
+                        <input type="hidden" name="whatever1" class="rating-value" value="0">
                     </div>
 
                     <div class="rating"></div>
 
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-7">
                     <div class="form-group">
                         <label class="col-md-12">Write your comment here</label>
                         <div class="col-md-12">
@@ -600,7 +625,7 @@
 <script type="text/javascript">
     jQuery(document).ready(function ($) {
 
-        var $star_rating = $('.star-rating .fa');
+        var $star_rating = $('.star-rating1 .fa');
 
         var SetRatingStar = function() {
             return $star_rating.each(function() {
@@ -625,7 +650,7 @@
         $('#owl-demo3').owlCarousel({
             margin: 0,
             nav: true,
-            autoplay: true,
+            autoplay: false,
             responsive: {
                 0: {
                     items: 2
