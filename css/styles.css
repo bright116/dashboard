@@ -16,6 +16,10 @@ label {
 .btn-success:hover{
     background: #659a41;
 }
+.height-50 {
+    height: 50px;
+    clear: both;
+}
 
 
 
@@ -111,6 +115,7 @@ label {
 }
 
 .white-box{
+    margin-top:10px;
     padding:5px;
 }
 
@@ -205,6 +210,7 @@ label {
 .a-color a{
     color: black;
 }
+
 .tab-content{
     margin-top:0;
 }
@@ -328,9 +334,13 @@ label {
 .customtab{
     border-bottom:0px;
 }
-.customtab .active a, .customtab .active a:hover, .customtab .active a:focus {
-    border-bottom: 2px solid #2cabe3;
-    color: #2cabe3;
+.customtab .active, .customtab .active a:hover, .customtab .active a:focus {
+    /*border-bottom: 2px solid #2cabe3;*/
+    color: #ed7d31;
+}
+.top-menu-active{
+    /*display: inherit;*/
+    border-bottom: 5px solid yellow;
 }
 .rpg{
     display: inline;
@@ -365,6 +375,118 @@ label {
 table#adv-dashboard{
     table-layout:fixed;
 }
+
+/* stepper */
+.stepwizard-step p {
+    margin-top: 10px;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 50%;
+    position: relative;
+}
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+
+.search-listing li{
+    border-bottom:0;
+}
+/*campaign setup*/
+.campaign-setup .radio-buttons input, .campaign-setup .checkbox-buttons input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.campaign-setup .radio-buttons label, .campaign-setup .checkbox-buttons label {
+    float: left;
+}
+
+.campaign-setup .radio-buttons label, .campaign-setup .checkbox-buttons label {
+    display: inline-block;
+    background-color: #fff;
+    color: #ff780a;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: none;
+    padding: 5px 15px;
+    border: 1px solid #ff780a;
+    /* -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1); */
+    /* box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1); */
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.campaign-setup .checkbox-buttons {
+    margin-top: 22px;
+}
+
+.campaign-setup .checkbox-buttons label {
+    padding: 6px 20px;
+}
+
+.campaign-setup .radio-buttons label:hover, .campaign-setup .checkbox-buttons label:hover {
+    cursor: pointer;
+}
+
+.campaign-setup .radio-buttons input:checked + label, .campaign-setup .checkbox-buttons input:checked + label,
+.activeselect {
+    background-color: #ff780a;
+    -webkit-box-shadow: none;
+    color: #fff;
+    box-shadow: none;
+}
+
+.campaign-setup .radio-buttons label, .campaign-setup .checkbox-buttons label {
+    border-radius: 4px;
+    margin-right: 5px;
+}
+/*#msform {text-align:left; }*/
+/*#eliteregister > li { text-align:center; }*/
+/*.input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {*/
+    /*height: 49px;*/
+/*}*/
+/*#msform input, #msform textarea { margin-bottom: 0; padding:5px;   }*/
+
+
+
+
 
 
 
