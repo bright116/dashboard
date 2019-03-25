@@ -20,6 +20,14 @@ label {
     height: 50px;
     clear: both;
 }
+.height-10 {
+    height: 10px;
+    clear: both;
+}
+.height-20 {
+    height: 20px;
+    clear: both;
+}
 
 
 
@@ -479,12 +487,11 @@ table#adv-dashboard{
 }
 /*#msform {text-align:left; }*/
 /*#eliteregister > li { text-align:center; }*/
-/*.input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {*/
-    /*height: 49px;*/
-/*}*/
-/*#msform input, #msform textarea { margin-bottom: 0; padding:5px;   }*/
-
-
+.input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {
+    height: 49px;
+}
+#msform input, #msform textarea { margin-bottom: 0; padding:5px;  }
+#msform .select2 textarea, #msform .select2 input { border:none;}
 
 
 
