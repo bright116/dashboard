@@ -493,7 +493,9 @@ table#adv-dashboard{
 #msform input, #msform textarea { margin-bottom: 0; padding:5px;  }
 #msform .select2 textarea, #msform .select2 input { border:none;}
 
-
+/*file uploader*/
+.fileinput-remove,
+.fileinput-upload { display: none; }
 
 
 
